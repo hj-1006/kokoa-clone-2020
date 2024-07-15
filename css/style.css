@@ -45,6 +45,25 @@ body{
 #login-form input::placeholder{
     color:rgba(0, 0, 0, 0.6); 
 }
+
 #login-form input:focus {
-    border-color: rgba(199, 233, 10, 0.6);
+    border-color: var(--yellow);
 }
+
+#login-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input[type="submit"]{
+    background-color:var(--yellow);
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+
+#login-form a{
+    text-align: center;
+    text-decoration: NONE;
+    color: inherit;
+} 
