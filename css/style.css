@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import "reset.css";
+@import "variables.css";
+@import "status-bar.css";
+
+
+body{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.welcom-header{
+    margin: 90px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.welcom-header__title{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.welcom-header__text{
+    width: 60%;
+    opacity: 0.7;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input{
+    border: none;
+    padding: 30px 0px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    transition: border-color 0.3s ease-in-out;
+    outline: none; /* 추가: 기본 검은 테두리를 제거합니다 */
+}
+
+#login-form input::placeholder{
+    color:rgba(0, 0, 0, 0.6); 
+}
+#login-form input:focus {
+    border-color: rgba(199, 233, 10, 0.6);
+}
