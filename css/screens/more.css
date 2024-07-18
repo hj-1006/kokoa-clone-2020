@@ -1,0 +1,44 @@
+
+.user-component__column i{
+    font-size: 25px; 
+    font-weight: 600;
+}
+
+.more-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: var(--main-border);
+    
+}
+.more-icons__row{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.more-icons__row:last-child{
+    margin: 25px ; 
+    justify-content: space-around;
+}
+.more-icons__row:last-child .more-icons__icon{
+    left: 60px;
+}
+.more-icons__icon {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* 아이콘들이 균등하게 분배되도록 설정 */
+    max-width: 25%; /* 아이콘의 최대 너비를 설정하여 각 행에 최대 4개의 아이콘이 표시되도록 설정 */
+}
+
+.more-icons__icon i{
+    font-size: 35px;
+}
+
+.more-icons__icon span{
+    margin-top: 11px;
+}
